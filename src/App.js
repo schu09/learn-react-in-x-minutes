@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import TodoList from "./TodoList";
 
 function App() {
-    const [todos, setTodos] = useState(["Todo 1", "Todo 2"]); // Object Destructuring
+    const [todos, setTodos] = useState([
+        { id: 1, name: "Todo 1", complete: true },
+    ]); // Object Destructuring
     return (
         <>
             <TodoList todos={todos} />
